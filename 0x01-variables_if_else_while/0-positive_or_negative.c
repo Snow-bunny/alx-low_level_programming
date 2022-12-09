@@ -3,7 +3,8 @@
 #include <stdio.h>
 /**
  * main - main block
- * Description: Get a random number and print the numder and if it is positive, negative, or zero
+ * Description: Get a random number and print the numder 
+ * and if it is positive, negative, or zero
  * Return: 0
  */
 int main(void)
