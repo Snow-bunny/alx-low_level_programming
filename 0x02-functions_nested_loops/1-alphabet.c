@@ -1,22 +1,16 @@
 #include "main.h"
 
 /**
- * print_alphabet - entry point
- *
- * Return: 0
+ * print_alphabet - prints the alpha in lc
  */
-
-void print_alphabet(void);
-
+void print_alphabet(void)
 {
-	char c = 'a';
+	char la;
 
-	while (c <= 'z')
-	{
-		_putchar(c);
-		c++;
-	}
 
-	_putchar('\n')
+	for (la = 'a'; la <= 'z'; la++)
+		_putchar(la);
 
+
+	_putchar('\n');
 }
