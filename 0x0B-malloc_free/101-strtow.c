@@ -8,7 +8,7 @@ char **strtow(char *str);
 /**
  * word_len - Locates the index marking the end of the
  * first word contained within a string.
- * @str: The string to be searched.
+ * @str: The string to be searched..
  * Return: The index marking the end of the initial word pointed to by str.
  */
 
@@ -21,7 +21,7 @@ int word_len(char *str)
 		len++;
 		index++;
 	}
-	retrun (len);
+	return (len);
 }
 
 /**
@@ -83,12 +83,14 @@ char **strtow(char *str)
 			for (; w >= 0; w--)
 				free(strings[w]);
 			free(strings);
-			return  (NULL);
+			return (NULL);
 		}
+
 		for (l = 0; l < letters; l++)
 			strings[w][l] = str[index++];
 		strings[w][l] = '\0';
 	}
+
 	strings[w] = NULL;
 
 	return (strings);
